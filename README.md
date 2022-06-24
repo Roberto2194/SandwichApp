@@ -1,4 +1,4 @@
-# SandwichApp
+# SandwichUp
 
 # Introduction or “how sandwiches made us the people we are today”
 
