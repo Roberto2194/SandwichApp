@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="435" id="KGk-i7-Jjw" customClass="CategoryCell" customModule="SandwichApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="435"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="435"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6o-Dt-ed5">
+                        <rect key="frame" x="0.0" y="0.0" width="389" height="435"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8fd-zU-JJb">
+                                <rect key="frame" x="0.0" y="79" width="389" height="356"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="356" id="ivB-Pq-Edf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Worldwide Classics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3V-9w-TsC">
+                                <rect key="frame" x="8" y="27" width="373" height="44"/>
+                                <color key="backgroundColor" red="0.9265502095" green="0.68375748400000003" blue="0.24070104959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9265502095" green="0.68375748400000003" blue="0.24070104959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="B3V-9w-TsC" firstAttribute="leading" secondItem="o6o-Dt-ed5" secondAttribute="leadingMargin" id="7AC-JO-1gR"/>
+                            <constraint firstItem="B3V-9w-TsC" firstAttribute="top" secondItem="o6o-Dt-ed5" secondAttribute="top" constant="27" id="FVM-Qh-UpQ"/>
+                            <constraint firstItem="8fd-zU-JJb" firstAttribute="leading" secondItem="o6o-Dt-ed5" secondAttribute="leading" id="I5Y-wy-MqF"/>
+                            <constraint firstItem="8fd-zU-JJb" firstAttribute="centerX" secondItem="o6o-Dt-ed5" secondAttribute="centerX" id="bSM-S7-ePb"/>
+                            <constraint firstItem="8fd-zU-JJb" firstAttribute="top" secondItem="B3V-9w-TsC" secondAttribute="bottom" constant="8" id="x3B-XG-5gD"/>
+                            <constraint firstAttribute="bottom" secondItem="8fd-zU-JJb" secondAttribute="bottom" id="zCd-tK-8rb"/>
+                            <constraint firstItem="B3V-9w-TsC" firstAttribute="centerX" secondItem="8fd-zU-JJb" secondAttribute="centerX" id="zSf-oj-vqf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.9265502095" green="0.68375748400000003" blue="0.24070104959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="o6o-Dt-ed5" secondAttribute="trailingMargin" id="A07-hV-cIF"/>
+                    <constraint firstAttribute="bottom" secondItem="o6o-Dt-ed5" secondAttribute="bottom" id="bUB-Ya-mPK"/>
+                    <constraint firstItem="o6o-Dt-ed5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jD3-yY-vnB"/>
+                    <constraint firstItem="o6o-Dt-ed5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xaO-ac-8BF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.9265502095" green="0.68375748400000003" blue="0.24070104959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryLabel" destination="B3V-9w-TsC" id="G6b-KW-XLy"/>
+                <outlet property="sandwichImage" destination="8fd-zU-JJb" id="3Ij-zF-Zbx"/>
+            </connections>
+            <point key="canvasLocation" x="193.47826086956522" y="214.62053571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
